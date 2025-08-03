@@ -6,12 +6,76 @@
 -->
 <html>
 	<head>
-		<title>WhitePrint</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	  <title>WhitePrint</title>
+	  <meta charset="utf-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	  <link rel="stylesheet" href="assets/css/main.css" />
+	  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	
+	  <style>
+	    /* Color-coded nav links */
+	    nav ul li a[href="#about"] {
+	      color: #6d6d6d; /* neutral gray */
+	      border-color: #6d6d6d;
+	    }
+	    nav ul li a[href="#ai"] {
+	      color: #4a90e2; /* blue */
+	      border-color: #4a90e2;
+	    }
+	    nav ul li a[href="#printing"] {
+	      color: #4caf50; /* green */
+	      border-color: #4caf50;
+	    }
+	    nav ul li a[href="#music"] {
+	      color: #f39c12; /* orange */
+	      border-color: #f39c12;
+	    }
+	    nav ul li a[href="#contact"] {
+	      color: #e74c3c; /* red */
+	      border-color: #e74c3c;
+	    }
+	
+	    /* Section headings with matching colors */
+	    #about h2.major {
+	      color: #6d6d6d;
+	    }
+	    #ai h2.major {
+	      color: #4a90e2;
+	    }
+	    #printing h2.major {
+	      color: #4caf50;
+	    }
+	    #music h2.major {
+	      color: #f39c12;
+	    }
+	    #contact h2.major {
+	      color: #e74c3c;
+	    }
+	
+	    /* Hover effect on nav links */
+	    nav ul li a:hover {
+	      opacity: 0.8;
+	      text-decoration: underline;
+	    }
+	
+	    /* Header title with offset byline */
+	    h1#site-title {
+	      position: relative;
+	      display: inline-block;
+	      font-weight: bold;
+	    }
+	    h1#site-title span.byline {
+	      font-size: 0.5em;
+	      color: #999;
+	      position: absolute;
+	      top: 0.2em;
+	      right: -6em;
+	      font-style: italic;
+	      white-space: nowrap;
+	    }
+	  </style>
 	</head>
+
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -24,17 +88,11 @@
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1 style="position: relative; display: inline-block;">
-								  WHITEPRINT
-								  <span style="
-								    font-size: 0.5em;
-								    color: #999;
-								    position: absolute;
-								    top: 0.2em;
-								    right: -6em;
-								    font-style: italic;
-								    white-space: nowrap;
-								  ">by Hunter White</span>
+								<h1 style="font-weight: bold; line-height: 1.1;">
+								  WHITEPRINT<br />
+								  <span style="font-size: 0.5em; color: #999; font-style: italic; margin-top: -0.2em; display: inline-block;">
+								    by Hunter White
+								  </span>
 								</h1>
 
 								<p>Freelance services in AI automation, custom 3D design & printing, and music production.</p>
@@ -378,6 +436,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 	</body>
 </html>
+
 
 
 
