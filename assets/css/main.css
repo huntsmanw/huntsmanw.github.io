@@ -1661,12 +1661,31 @@ input, select, textarea {
 		}
 
 
-/* Hide vertical scrollbar but still allow scrolling */
-body {
-  overflow-y: scroll;        /* Enables scrolling */
-  scrollbar-width: none;     /* For Firefox */
+/* Hide scrollbar for all scrollable elements */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* Optional: just makes scrollbar invisible */
 }
 
-body::-webkit-scrollbar {
-  display: none;             /* For Chrome, Edge, Safari */
+/* Firefox */
+html {
+  scrollbar-width: none;
+  -moz-scrollbars-none: none;
+}
+
+/* IE and Edge */
+body {
+  -ms-overflow-style: none;
+}
+
+/* Make sure the scroll container hides scrollbar */
+html, body, #wrapper {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* For #wrapper, if it scrolls */
+#wrapper::-webkit-scrollbar {
+  display: none;
 }
