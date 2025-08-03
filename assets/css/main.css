@@ -1673,3 +1673,24 @@ header nav ul li {
   display: inline-block;
   margin: 0 1em;
 }
+
+#main > section:first-of-type {
+  padding-top: 2em; /* reduce this */
+}
+
+header {
+  padding-bottom: 1em;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden; /* prevent scroll */
+}
+
+#main {
+  height: 100%;
+  overflow: hidden;
+}
+
