@@ -1659,25 +1659,3 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
-
-#footer {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  margin-top: 3em;
-  color: #666;
-}
-
-#footer .design-credit {
-  font-size: 0.75em;
-  color: #aaa;
-  margin-top: 0.3em;
-}
-
-#footer .design-credit a {
-  color: #aaa;
-  text-decoration: none;
-}
-
-#footer .design-credit a:hover {
-  text-decoration: underline;
-}
