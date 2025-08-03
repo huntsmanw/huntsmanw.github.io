@@ -1694,3 +1694,30 @@ body, html {
   overflow: hidden;
 }
 
+/* Prevent extra page height */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Let main content fill remaining space */
+#main {
+  height: calc(100vh - 4rem); /* Adjust if needed */
+  overflow-y: auto;
+}
+
+/* Reduce section top padding if needed */
+#main > section {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#header nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 1em;
+}
+
