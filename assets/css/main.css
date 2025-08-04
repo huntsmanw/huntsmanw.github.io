@@ -1665,3 +1665,10 @@ input, select, textarea {
 		  transform: scale(1.05);
 		  transition: all 0.2s ease-in-out;
 		}
+
+		#zoom-wrapper {
+		  transform: scale(0.9);
+		  transform-origin: top center;
+		  width: 111.11%; /* 1 / 0.9 to compensate scaling */
+		}
+
