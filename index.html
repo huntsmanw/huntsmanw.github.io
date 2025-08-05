@@ -131,13 +131,50 @@
 				<!-- Main -->
 					<div id="main">
 
+						<!-- Portfolio Filter Nav -->
+						<nav id="portfolio-nav" style="
+						  position: sticky;
+						  top: 0;
+						  z-index: 999;
+						  background: #1e1e1e;
+						  padding: 0.8em 1em;
+						  display: flex;
+						  gap: 1.5em;
+						  justify-content: center;
+						  align-items: center;
+						  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+						">
+						  <a href="#portfolio-ai" class="portfolio-link">AI</a>
+						  <a href="#portfolio-3d" class="portfolio-link">3D Printing</a>
+						  <a href="#portfolio-music" class="portfolio-link">Music</a>
+						</nav>
+						
+						<!-- Optional Smooth Scroll -->
+						<style>
+						  html {
+						    scroll-behavior: smooth;
+						  }
+						
+						  .portfolio-link {
+						    color: #ffffff;
+						    font-weight: 600;
+						    text-decoration: none;
+						    transition: color 0.2s ease;
+						  }
+						
+						  .portfolio-link:hover,
+						  .portfolio-link:focus {
+						    color: #00ffff;
+						  }
+						</style>
+						
 						<!-- Portfolio -->
 						<article id="portfolio" style="max-width: 1000px; margin: 0 auto;">
 						  <h2 class="major">Portfolio</h2>
 						  <p>A curated selection of projects in AI automation, 3D design, and music production.</p>
 						
 						  <!-- AI Automation -->
-						  <section style="margin-top: 3em;">
+						  <section id="portfolio-ai" style="margin-top: 3em;">
 						    <h3>Artificial Intelligence</h3>
 						    <div class="projects-grid">
 						      <div class="project-card">
@@ -152,7 +189,7 @@
 						  </section>
 						
 						  <!-- 3D Printing -->
-						  <section style="margin-top: 3em;">
+						  <section id="portfolio-3d" style="margin-top: 3em;">
 						    <h3>3D Design & Printing</h3>
 						    <div class="projects-grid">
 						      <div class="project-card">
@@ -167,7 +204,7 @@
 						  </section>
 						
 						  <!-- Music Production -->
-						  <section style="margin-top: 3em;">
+						  <section id="portfolio-music" style="margin-top: 3em;">
 						    <h3>Music Production</h3>
 						    <div class="projects-grid">
 						      <div class="project-card">
@@ -182,6 +219,7 @@
 						    </div>
 						  </section>
 						</article>
+
 
 
 						<!-- About -->
@@ -604,6 +642,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/main.js"></script>
 	</body>
 </html>
+
 
 
 
