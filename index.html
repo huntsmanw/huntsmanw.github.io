@@ -131,123 +131,185 @@
 				<!-- Main -->
 					<div id="main">
 
-<!-- Portfolio Filter Nav -->
-<nav id="portfolio-nav" style="
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  background: #1e1e1e;
-  padding: 0.8em 1em;
-  display: flex;
-  gap: 1em;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-">
-  <a href="#portfolio-ai" class="portfolio-link">AI</a>
-  <a href="#portfolio-3d" class="portfolio-link">3D Printing</a>
-  <a href="#portfolio-music" class="portfolio-link">Music</a>
-</nav>
 
-<!-- Portfolio -->
-<article id="portfolio" style="max-width: 1000px; margin: 0 auto;">
-  <h2 class="major">Portfolio</h2>
-  <p>A curated selection of projects in AI automation, 3D design, and music production.</p>
+						<!-- Portfolio -->
+						<article id="portfolio" style="max-width: 1000px; margin: 0 auto;">
+						  <h2 class="major">Portfolio</h2>
+						  <p>A curated selection of projects in AI automation, 3D design, and music production.</p>
+						
+						  <!-- AI Automation -->
+						  <section id="portfolio-ai" style="margin-top: 3em;">
+						    <h3><a href="portfolio-ai.html" style="color: inherit; text-decoration: underline;">Artificial Intelligence</a></h3>
+						    <div class="projects-grid">
+						      <div class="project-card">
+						        <img src="images/ai_project1.jpg" alt="AI Project" class="project-thumb">
+						        <h4>Voice Assistant for Small Business</h4>
+						        <p>Custom-built AI voice assistant that automates scheduling and client interactions.</p>
+						        <span class="tag">Python</span>
+						        <span class="tag">LLM</span>
+						        <p><a href="portfolio-ai.html" class="button small">View Details</a></p>
+						      </div>
+						    </div>
+						  </section>
+						
+						  <!-- 3D Printing -->
+						  <section id="portfolio-3d" style="margin-top: 3em;">
+						    <h3><a href="portfolio-3d.html" style="color: inherit; text-decoration: underline;">3D Design & Printing</a></h3>
+						    <div class="projects-grid">
+						      <div class="project-card">
+						        <img src="images/3d_project1.jpg" alt="3D Print Project" class="project-thumb">
+						        <h4>Custom Tool Holder</h4>
+						        <p>Designed and printed a modular tool organizer for a CNC workstation.</p>
+						        <span class="tag">Fusion 360</span>
+						        <span class="tag">PETG</span>
+						        <p><a href="portfolio-3d.html" class="button small">View Details</a></p>
+						      </div>
+						    </div>
+						  </section>
+						
+						  <!-- Music Production -->
+						  <section id="portfolio-music" style="margin-top: 3em;">
+						    <h3><a href="portfolio-music.html" style="color: inherit; text-decoration: underline;">Music Production</a></h3>
+						    <div class="projects-grid">
+						      <div class="project-card">
+						        <img src="images/music_project1.jpg" alt="Music Project" class="project-thumb">
+						        <h4>Retro Synthwave EP</h4>
+						        <p>Produced, mixed, and mastered a 5-track synthwave album inspired by 80s cinema.</p>
+						        <span class="tag">Ableton</span>
+						        <span class="tag">Mixing</span>
+						        <span class="tag">Mastering</span>
+						        <p><a href="portfolio-music.html" class="button small">View Details</a></p>
+						      </div>
+						    </div>
+						  </section>
+						</article>
 
-  <!-- AI Automation -->
-  <section id="portfolio-ai" style="margin-top: 3em;">
-    <h3>Artificial Intelligence</h3>
-    <div class="projects-grid">
-      <div class="project-card">
-        <img src="images/ai_project1.jpg" alt="AI Project" class="project-thumb">
-        <h4>Voice Assistant for Small Business</h4>
-        <p>Custom-built AI voice assistant that automates scheduling and client interactions.</p>
-        <span class="tag">Python</span>
-        <span class="tag">LLM</span>
-      </div>
-    </div>
-  </section>
+						<article id="portfolio-ai" style="max-width: 900px; margin: 2em auto;">
+						  <h2 class="major" style="margin-bottom: 1em;">Artificial Intelligence Portfolio</h2>
+						  
+						  <p style="font-size: 1.1em; line-height: 1.6; margin-bottom: 2em;">
+						    A curated selection of AI projects showcasing custom automation, machine learning, and intelligent systems tailored to solve real-world problems.
+						  </p>
+						  
+						  <div class="projects-grid" style="
+						    display: grid;
+						    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+						    gap: 1.5em;
+						  ">
+						    <!-- Project 1 -->
+						    <div class="project-card" style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow: hidden; background: #fff;">
+						      <img src="images/ai_project1.jpg" alt="Voice Assistant for Small Business" style="width: 100%; height: auto; display: block;" />
+						      <div style="padding: 1em;">
+						        <h3 style="margin-top: 0; font-size: 1.2em;">Voice Assistant for Small Business</h3>
+						        <p style="font-size: 1em; line-height: 1.4;">Custom-built AI voice assistant that automates scheduling and client interactions.</p>
+						        <div style="margin-top: 0.5em;">
+						          <span style="font-size: 0.85em; color: #666; font-weight: 600; background: #e0f3ff; padding: 0.15em 0.5em; border-radius: 4px; margin-right: 0.3em;">Python</span>
+						          <span style="font-size: 0.85em; color: #666; font-weight: 600; background: #e0f3ff; padding: 0.15em 0.5em; border-radius: 4px;">LLM</span>
+						        </div>
+						      </div>
+						    </div>
+						
+						    <!-- Add more project cards here -->
+						  </div>
+						
+						  <p style="text-align: center; margin-top: 3em;">
+						    <a href="#contact" class="button" style="
+						      background: #66ccff; 
+						      color: #121212; 
+						      padding: 0.6em 1.4em; 
+						      border-radius: 6px; 
+						      font-weight: bold; 
+						      text-decoration: none;
+						      cursor: pointer;
+						      display: inline-block;
+						    ">Start Your AI Project</a>
+						  </p>
+						</article>
 
-  <!-- 3D Printing -->
-  <section id="portfolio-3d" style="margin-top: 3em;">
-    <h3>3D Design & Printing</h3>
-    <div class="projects-grid">
-      <div class="project-card">
-        <img src="images/3d_project1.jpg" alt="3D Print Project" class="project-thumb">
-        <h4>Custom Tool Holder</h4>
-        <p>Designed and printed a modular tool organizer for a CNC workstation.</p>
-        <span class="tag">Fusion 360</span>
-        <span class="tag">PETG</span>
-      </div>
-    </div>
-  </section>
+						<article id="portfolio-3d" style="max-width: 900px; margin: 2em auto;">
+						  <h2 class="major" style="margin-bottom: 1em;">3D Printing Portfolio</h2>
+						  
+						  <p style="font-size: 1.1em; line-height: 1.6; margin-bottom: 2em;">
+						    Explore a selection of 3D printed models and prototypes, crafted with precision to bring innovative designs into the physical world.
+						  </p>
+						  
+						  <div class="projects-grid" style="
+						    display: grid;
+						    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+						    gap: 1.5em;
+						  ">
+						    <!-- Project 1 -->
+						    <div class="project-card" style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow: hidden; background: #fff;">
+						      <img src="images/3d_project1.jpg" alt="Custom Tool Holder" style="width: 100%; height: auto; display: block;" />
+						      <div style="padding: 1em;">
+							<h3 style="margin-top: 0; font-size: 1.2em;">Custom Tool Holder</h3>
+							<p style="font-size: 1em; line-height: 1.4;">Designed and printed a modular tool organizer for a CNC workstation.</p>
+							<div style="margin-top: 0.5em;">
+							  <span style="font-size: 0.85em; color: #666; font-weight: 600; background: #e0f3ff; padding: 0.15em 0.5em; border-radius: 4px; margin-right: 0.3em;">Fusion 360</span>
+							  <span style="font-size: 0.85em; color: #666; font-weight: 600; background: #e0f3ff; padding: 0.15em 0.5em; border-radius: 4px;">PETG</span>
+							</div>
+						      </div>
+						    </div>
+						
+						    <!-- Add more project cards here -->
+						  </div>
+						
+						  <p style="text-align: center; margin-top: 3em;">
+						    <a href="#contact" class="button" style="
+						      background: #66ccff; 
+						      color: #121212; 
+						      padding: 0.6em 1.4em; 
+						      border-radius: 6px; 
+						      font-weight: bold; 
+						      text-decoration: none;
+						      cursor: pointer;
+						      display: inline-block;
+						    ">Start Your 3D Printing Project</a>
+						  </p>
+						</article>
 
-  <!-- Music Production -->
-  <section id="portfolio-music" style="margin-top: 3em;">
-    <h3>Music Production</h3>
-    <div class="projects-grid">
-      <div class="project-card">
-        <img src="images/music_project1.jpg" alt="Music Project" class="project-thumb">
-        <h4>Retro Synthwave EP</h4>
-        <p>Produced, mixed, and mastered a 5-track synthwave album inspired by 80s cinema.</p>
-        <span class="tag">Ableton</span>
-        <span class="tag">Mixing</span>
-        <span class="tag">Mastering</span>
-      </div>
-    </div>
-  </section>
-</article>
-
-<!-- Button Style -->
-<style>
-  .portfolio-link {
-    padding: 0.6em 1.2em;
-    border: 2px solid #fff;
-    border-radius: 8px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    background-color: transparent;
-  }
-
-  .portfolio-link:hover {
-    background-color: #fff;
-    color: #1e1e1e;
-  }
-
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5em;
-    margin-top: 1.5em;
-  }
-
-  .project-card {
-    background: #2a2a2a;
-    padding: 1em;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-  }
-
-  .project-thumb {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 0.8em;
-  }
-
-  .tag {
-    display: inline-block;
-    background: #444;
-    padding: 0.2em 0.6em;
-    border-radius: 6px;
-    font-size: 0.9em;
-    margin-right: 0.4em;
-    margin-top: 0.4em;
-  }
-</style>
-
+						<article id="portfolio-music" style="max-width: 900px; margin: 2em auto;">
+						  <h2 class="major" style="margin-bottom: 1em;">Music Production Portfolio</h2>
+						  
+						  <p style="font-size: 1.1em; line-height: 1.6; margin-bottom: 2em;">
+						    Discover custom audio and music projects crafted to enhance brand identity and bring creative sound ideas to life.
+						  </p>
+						  
+						  <div class="projects-grid" style="
+						    display: grid;
+						    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+						    gap: 1.5em;
+						  ">
+						    <!-- Project 1 -->
+						    <div class="project-card" style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow: hidden; background: #fff;">
+						      <img src="images/music_project1.jpg" alt="Retro Synthwave EP" style="width: 100%; height: auto; display: block;" />
+						      <div style="padding: 1em;">
+						        <h3 style="margin-top: 0; font-size: 1.2em;">Retro Synthwave EP</h3>
+						        <p style="font-size: 1em; line-height: 1.4;">Produced, mixed, and mastered a 5-track synthwave album inspired by 80s cinema.</p>
+						        <div style="margin-top: 0.5em;">
+						          <span style="font-size: 0.85em; color: #666; font-weight: 600; background: #ffe0e0; padding: 0.15em 0.5em; border-radius: 4px; margin-right: 0.3em;">Ableton</span>
+						          <span style="font-size: 0.85em; color: #666; font-weight: 600; background: #ffe0e0; padding: 0.15em 0.5em; border-radius: 4px;">Mixing</span>
+						          <span style="font-size: 0.85em; color: #666; font-weight: 600; background: #ffe0e0; padding: 0.15em 0.5em; border-radius: 4px;">Mastering</span>
+						        </div>
+						      </div>
+						    </div>
+						
+						    <!-- Add more project cards here -->
+						  </div>
+						
+						  <p style="text-align: center; margin-top: 3em;">
+						    <a href="#contact" class="button" style="
+						      background: #ff9999; 
+						      color: #121212; 
+						      padding: 0.6em 1.4em; 
+						      border-radius: 6px; 
+						      font-weight: bold; 
+						      text-decoration: none;
+						      cursor: pointer;
+						      display: inline-block;
+						    ">Start Your Music Project</a>
+						  </p>
+						</article>
 
 
 
@@ -671,6 +733,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/main.js"></script>
 	</body>
 </html>
+
 
 
 
