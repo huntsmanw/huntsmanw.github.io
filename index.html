@@ -419,6 +419,18 @@
 
 
 						<!-- About -->
+							<style>
+							  @media (max-width: 600px) {
+							    #about > div {
+							      flex-direction: column !important;
+							      align-items: center !important;
+							    }
+							    #about > div > span.image.main {
+							      width: 100% !important;
+							      max-width: 300px !important;
+							    }
+							  }
+							</style>
 							<article id="about" style="max-width: 900px; width: 100%; margin: 0 auto;">
 							  <h2 class="major" style="margin-bottom: 1em;">About</h2>
 							
@@ -838,6 +850,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/main.js"></script>
 	</body>
 </html>
+
 
 
 
