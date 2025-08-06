@@ -1668,7 +1668,6 @@ input, select, textarea {
 
 
 /* === Global Responsive Styling for All Pages === */
-
 @media (max-width: 768px) {
 
   /* GENERAL LAYOUT */
@@ -1678,19 +1677,30 @@ input, select, textarea {
     overflow-x: hidden;
   }
 
-  .container, section, article, .row, .columns, .text-block, .text-content {
+  .container, section, article, .row, .columns, .text-block, .text-content, .inner, .wrapper {
     padding: 1em !important;
     margin: 0 auto !important;
     width: 100% !important;
     max-width: 100%;
     box-sizing: border-box;
-    text-align: center;
+    text-align: center !important;
     flex-direction: column !important;
     align-items: center;
   }
 
   /* TEXT */
-  h1, h2, h3, h4, p, ul, li {
+  h1 {
+    font-size: 1.8em;
+    text-align: center !important;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    text-align: center !important;
+  }
+
+  h3, h4, p, ul, li {
+    font-size: 1em;
     padding: 0 1em;
     text-align: center !important;
   }
@@ -1702,8 +1712,10 @@ input, select, textarea {
   /* LOGO */
   .logo img {
     height: 50px !important;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
+    padding-left: 5px; /* Adjust to nudge left if needed */
   }
 
   /* NAVIGATION */
@@ -1747,10 +1759,19 @@ input, select, textarea {
 
   /* BUTTONS */
   button, .button {
-    width: 100% !important;
+    width: 90% !important;
+    max-width: 300px;
     padding: 1em;
     font-size: 1em;
-    margin: 0.5em 0;
+    margin: 1em auto;
+    display: block;
+  }
+
+  /* ROW AND COLUMN BEHAVIOR */
+  .row, .columns {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
   }
 
   /* FOOTER */
@@ -1764,9 +1785,3 @@ input, select, textarea {
     box-sizing: border-box;
   }
 }
-
-
-
-
-
-
