@@ -297,24 +297,7 @@
 						</article>
 
 						<article id="portfolio-3d" style="max-width: 900px; width: 100%; margin: 2em auto;">
-							<style>
-							  @media (max-width: 600px) {
-							    .button {
-							      display: block !important;
-							      margin-left: auto !important;
-							      margin-right: auto !important;
-							      max-width: 100% !important;
-							      white-space: normal !important;
-							      word-wrap: break-word !important;
-							      padding-top: 1em !important;
-							      padding-bottom: 1em !important;
-							      box-sizing: border-box !important;
-							    }
-							  }
-							</style>
-						  <h2 class="major" style="margin-bottom: 1em;">
-						  3D Printing<wbr> Portfolio
-						</h2>
+						  <h2 class="major" style="margin-bottom: 1em;">3D Portfolio</h2>
 						  <p style="font-size: 1.1em; line-height: 1.6; margin-bottom: 2em;">
 						    Explore a selection of 3D printed models and prototypes, crafted with precision to bring innovative designs into the physical world.
 						  </p>
@@ -349,7 +332,7 @@
 						  </div>
 						
 						  <p style="text-align: center; margin-top: 3em;">
-						    <a href="#contact" class="button" style="
+						    <a href="#contact" class="button" id="print-btn" style="
 							  background: #a2d5ab; 
 							  color: #121212; 
 							  padding: 0.6em 1.4em; 
@@ -362,14 +345,23 @@
 							  line-height: 1.4;
 							  max-width: 100%;
 							  box-sizing: border-box;
-							  white-space: normal; /* allow text to wrap */
+							  white-space: normal;
 							  word-wrap: break-word;
-							">Start Your 3D Printing Project</a>
+							">
+							  Start Your 3D Printing Project
+							</a>
 						  </p>
+						<style>
+						  @media (max-width: 600px) {
+						    #print-btn {
+						      padding-bottom: 1em !important;
+						    }
+						  }
+						</style>
 						</article>
 
 						<article id="portfolio-music" style="max-width: 900px; width: 100%; margin: 2em auto;">
-						  <h2 class="major" style="margin-bottom: 1em;">Music Production Portfolio</h2>
+						  <h2 class="major" style="margin-bottom: 1em;">Music Portfolio</h2>
 						  
 						  <p style="font-size: 1.1em; line-height: 1.6; margin-bottom: 2em;">
 						    Discover custom audio and music projects crafted to enhance brand identity and bring creative sound ideas to life.
@@ -904,6 +896,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/main.js"></script>
 	</body>
 </html>
+
 
 
 
