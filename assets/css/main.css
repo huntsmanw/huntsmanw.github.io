@@ -1671,17 +1671,24 @@ input, select, textarea {
     flex-direction: column !important;
     align-items: center;
     text-align: center !important;
+    padding: 0 1em;
+    max-width: 90%;
+    margin: 0 auto;
   }
 
   .about-container .image.main {
-    width: 90% !important;
-    max-width: 300px;
+    width: 100% !important;
+    max-width: 280px;
     margin-bottom: 1em;
   }
 
   .about-container > div {
     width: 100% !important;
-    flex: none !important;
+  }
+
+  article#about {
+    padding: 0 1em;
   }
 }
+
 
