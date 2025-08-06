@@ -297,8 +297,17 @@
 						</article>
 
 						<article id="portfolio-3d" style="max-width: 900px; width: 100%; margin: 2em auto;">
-						  <h2 class="major" style="margin-bottom: 1em;">3D Printing Portfolio</h2>
-						  
+							<style>
+							  @media (max-width: 600px) {
+							    .underline-mobile {
+							      border-bottom: 2px solid currentColor;
+							      padding-bottom: 2px;
+							    }
+							  }
+							</style>
+						  <h2 class="major" style="margin-bottom: 1em;">
+						  3D Printing <span class="underline-mobile">Portfolio</span>
+						</h2>
 						  <p style="font-size: 1.1em; line-height: 1.6; margin-bottom: 2em;">
 						    Explore a selection of 3D printed models and prototypes, crafted with precision to bring innovative designs into the physical world.
 						  </p>
@@ -334,19 +343,21 @@
 						
 						  <p style="text-align: center; margin-top: 3em;">
 						    <a href="#contact" class="button" style="
-						      background: #a2d5ab; 
-						      color: #121212; 
-						      padding: 0.6em 1.4em; 
-						      border-radius: 6px; 
-						      font-weight: bold; 
-						      text-decoration: none;
-						      cursor: pointer;
-						      display: inline-block;
-							font-size: 1em;
+							  background: #a2d5ab; 
+							  color: #121212; 
+							  padding: 0.6em 1.4em; 
+							  border-radius: 6px; 
+							  font-weight: bold; 
+							  text-decoration: none;
+							  cursor: pointer;
+							  display: inline-block;
+							  font-size: 1em;
 							  line-height: 1.4;
-							  text-align: center;
-							  vertical-align: middle;
-						    ">Start Your 3D Printing Project</a>
+							  max-width: 100%;
+							  box-sizing: border-box;
+							  white-space: normal; /* allow text to wrap */
+							  word-wrap: break-word;
+							">Start Your 3D Printing Project</a>
 						  </p>
 						</article>
 
@@ -886,6 +897,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/main.js"></script>
 	</body>
 </html>
+
 
 
 
