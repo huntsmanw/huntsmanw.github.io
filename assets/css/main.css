@@ -1667,6 +1667,104 @@ input, select, textarea {
 		}
 
 
+/* === Global Responsive Styling for All Pages === */
+
+@media (max-width: 768px) {
+
+  /* GENERAL LAYOUT */
+  body, html {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .container, section, article, .row, .columns, .text-block, .text-content {
+    padding: 1em !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  /* TEXT */
+  h1, h2, h3, h4, p, ul, li {
+    padding: 0 1em;
+    text-align: center !important;
+  }
+
+  ul {
+    padding-left: 1.2em !important;
+  }
+
+  /* LOGO */
+  .logo img {
+    height: 50px !important;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* NAVIGATION */
+  nav ul {
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 0.5em 0 !important;
+  }
+
+  /* PROJECT CARDS / GRIDS */
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 1.5em;
+    padding: 1em;
+  }
+
+  .project-card {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  /* ABOUT IMAGE + TEXT SIDE-BY-SIDE LAYOUT */
+  .about-container, .feature-row, .two-column {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center !important;
+  }
+
+  .about-container img,
+  .feature-row img {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 1em;
+  }
+
+  /* BUTTONS */
+  button, .button {
+    width: 100% !important;
+    padding: 1em;
+    font-size: 1em;
+    margin: 0.5em 0;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 1em;
+    text-align: center;
+  }
+
+  /* OPTIONAL: Prevent horizontal scrollbars from overflowing elements */
+  * {
+    box-sizing: border-box;
+  }
+}
+
 
 
 
