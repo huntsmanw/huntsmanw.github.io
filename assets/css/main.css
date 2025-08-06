@@ -1666,3 +1666,22 @@ input, select, textarea {
 		  transition: all 0.2s ease-in-out;
 		}
 
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center !important;
+  }
+
+  .about-container .image.main {
+    width: 90% !important;
+    max-width: 300px;
+    margin-bottom: 1em;
+  }
+
+  .about-container > div {
+    width: 100% !important;
+    flex: none !important;
+  }
+}
+
