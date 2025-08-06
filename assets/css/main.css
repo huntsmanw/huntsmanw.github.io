@@ -1667,130 +1667,80 @@ input, select, textarea {
 		}
 
 
-/* === Global Responsive Styling for All Pages === */
 @media (max-width: 768px) {
-
-  /* GENERAL LAYOUT */
-  body, html {
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-  }
-
-  .container, section, article, .row, .columns, .text-block, .text-content, .inner, .wrapper {
-    padding: 1em !important;
-    margin: 0 auto !important;
+  /* Make main containers full width and centered */
+  #wrapper, #main, article, section {
     width: 100% !important;
-    max-width: 100%;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 1em !important;
     box-sizing: border-box;
-    text-align: center !important;
-    flex-direction: column !important;
-    align-items: center;
   }
 
-  /* TEXT */
-  h1 {
-    font-size: 1.8em;
-    text-align: center !important;
-  }
-
-  h2 {
-    font-size: 1.4em;
-    text-align: center !important;
-  }
-
-  h3, h4, p, ul, li {
-    font-size: 1em;
-    padding: 0 1em;
-    text-align: center !important;
-  }
-
-  ul {
-    padding-left: 1.2em !important;
-  }
-
-  /* LOGO */
-  .logo img {
-    height: 50px !important;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    padding-left: 5px; /* Adjust to nudge left if needed */
-  }
-
-  /* NAVIGATION */
+  /* Stack navigation vertically and center */
   nav ul {
+    display: flex !important;
     flex-direction: column !important;
+    padding: 0 !important;
     align-items: center !important;
-    padding: 0;
   }
-
   nav ul li {
     margin: 0.5em 0 !important;
   }
 
-  /* PROJECT CARDS / GRIDS */
-  .project-grid {
-    display: grid;
-    grid-template-columns: 1fr !important;
-    gap: 1.5em;
-    padding: 1em;
+  /* Stack project cards vertically and full width */
+  .projects-grid {
+    display: block !important;
+    padding: 0 !important;
   }
-
   .project-card {
-    width: 90% !important;
-    margin: 0 auto;
+    width: 100% !important;
+    margin: 1em 0 !important;
   }
 
-/* Center View Details buttons in project cards */
-.project-card .button,
-.project-card button {
-  display: block;
-  margin: 1em auto;
-  text-align: center;
-}
+  /* Center buttons and make them full width */
+  .button {
+    display: block !important;
+    width: 100% !important;
+    max-width: 300px;
+    margin: 1em auto !important;
+    padding: 1em !important;
+    font-size: 1.1em !important;
+  }
 
-  /* ABOUT IMAGE + TEXT SIDE-BY-SIDE LAYOUT */
-  .about-container, .feature-row, .two-column {
-    display: flex;
+  /* Make images responsive and centered */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  /* Text center alignment */
+  h1, h2, h3, p, ul, li {
+    text-align: center !important;
+    padding-left: 0 !important;
+  }
+
+  /* Logo smaller and centered */
+  .logo img {
+    height: 50px !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+
+  /* About section stacked */
+  #about > div {
     flex-direction: column !important;
-    align-items: center;
+    align-items: center !important;
     text-align: center !important;
   }
 
-  .about-container img,
-  .feature-row img {
-    max-width: 90%;
-    height: auto;
-    margin-bottom: 1em;
-  }
-
-  /* BUTTONS */
-  button, .button {
-    width: 90% !important;
-    max-width: 300px;
-    padding: 1em;
-    font-size: 1em;
-    margin: 1em auto;
-    display: block;
-  }
-
-  /* ROW AND COLUMN BEHAVIOR */
-  .row, .columns {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em;
-  }
-
-  /* FOOTER */
-  footer {
-    padding: 1em;
-    text-align: center;
-  }
-
-  /* OPTIONAL: Prevent horizontal scrollbars from overflowing elements */
-  * {
-    box-sizing: border-box;
+  /* Remove any horizontal scrolling */
+  body, html {
+    overflow-x: hidden !important;
   }
 }
+
+
 
