@@ -1742,6 +1742,14 @@ input, select, textarea {
     margin: 0 auto;
   }
 
+/* Center View Details buttons in project cards */
+.project-card .button,
+.project-card button {
+  display: block;
+  margin: 1em auto;
+  text-align: center;
+}
+
   /* ABOUT IMAGE + TEXT SIDE-BY-SIDE LAYOUT */
   .about-container, .feature-row, .two-column {
     display: flex;
@@ -1785,3 +1793,4 @@ input, select, textarea {
     box-sizing: border-box;
   }
 }
+
