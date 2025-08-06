@@ -1667,28 +1667,32 @@ input, select, textarea {
 		}
 
 @media (max-width: 768px) {
+  article#about {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+
   .about-container {
     flex-direction: column !important;
     align-items: center;
     text-align: center !important;
-    padding: 0 1em;
-    max-width: 90%;
-    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
   }
 
   .about-container .image.main {
-    width: 100% !important;
-    max-width: 280px;
-    margin-bottom: 1em;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 1em;
   }
 
   .about-container > div {
-    width: 100% !important;
-  }
-
-  article#about {
-    padding: 0 1em;
+    width: 100%;
+    max-width: 90%;
   }
 }
+
+
 
 
