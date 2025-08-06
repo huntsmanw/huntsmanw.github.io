@@ -1666,33 +1666,37 @@ input, select, textarea {
 		  transition: all 0.2s ease-in-out;
 		}
 
-@media (max-width: 768px) {
-  article#about {
-    max-width: 400px;
-    margin: 0 auto;
+/* Only affects screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  body {
     padding: 0 1em;
   }
 
-  .about-container {
+  article {
+    max-width: 95vw !important;
+    margin: 0 auto !important;
+  }
+
+  #about > div {
     flex-direction: column !important;
-    align-items: center;
-    text-align: center !important;
-    padding: 0;
-    max-width: 100%;
+    align-items: center !important;
   }
 
-  .about-container .image.main {
-    width: 100%;
-    max-width: 200px;
-    margin: 0 auto 1em;
+  #about .image.main {
+    width: 80% !important;
+    margin-bottom: 1em;
   }
 
-  .about-container > div {
+  .actions {
+    text-align: center;
+  }
+
+  .actions li {
+    margin: 0.5em 0;
+  }
+
+  .button {
     width: 100%;
-    max-width: 90%;
+    max-width: 300px;
   }
 }
-
-
-
-
